@@ -1,0 +1,31 @@
+<deprecations>
+	<deprecation id="DE0008">
+		<affected>
+			<api id="M:System.Reflection.IntrospectionExtensions.GetTypeInfo(System.Type)">
+				<namespace>System.Reflection</namespace>
+				<type>IntrospectionExtensions</type>
+				<member>GetTypeInfo(Type)</member>
+			</api>
+			<api id="T:System.Reflection.IReflectableType">
+				<namespace>System.Reflection</namespace>
+				<type>IReflectableType</type>
+			</api>
+			<api id="M:System.Reflection.IReflectableType.GetTypeInfo">
+				<namespace>System.Reflection</namespace>
+				<type>IReflectableType</type>
+				<member>GetTypeInfo()</member>
+			</api>
+			<api id="T:System.Reflection.TypeInfo">
+				<namespace>System.Reflection</namespace>
+				<type>TypeInfo</type>
+			<api>
+		</affected>
+		<requires>
+			<api id="M:System.Type.GetMembers">
+				<namespace>System</namespace>
+				<type>Type</type>
+				<member>GetMembers()</member>
+			</api>
+		</requires>
+	</deprecation>
+</deprecations>
