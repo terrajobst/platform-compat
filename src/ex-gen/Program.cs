@@ -109,6 +109,7 @@ namespace ex_gen
                         "win-x64",
                         "osx-x64",
                         "linux-x64",
+                        "browser",
                     };
 
                     var projectDirectoryPath = Path.Combine(sourcePath, "project");
@@ -251,7 +252,7 @@ namespace ex_gen
                 if (Path.GetFileName(root) == "project")
                     continue;
 
-                var match = Regex.Match(root, @"\\([^-]+)-x64");
+                var match = Regex.Match(root, @"\\([^-]+)(-x64)?$");
                 if (!match.Success)
                 {
                     throw new InvalidDataException($"Published directory {root} name is not in the expected format.");
