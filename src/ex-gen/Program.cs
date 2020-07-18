@@ -97,11 +97,11 @@ namespace ex_gen
 
                 if (!Directory.Exists(sourcePath))
                 {
-                    var tfm = @"netcoreapp2.1";
+                    var tfm = @"net5.0";
 
                     var packages = new[]
                     {
-                        ("Microsoft.Windows.Compatibility", "2.0.0-rc1"),
+                        ("Microsoft.Windows.Compatibility", "5.0.0-preview.6.20305.6"),
                     };
 
                     var rids = new[]
